@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>JUSTCODE | Add New Blog</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="app.css">
+  </head>
+  <body>
+    <div class="addBlog">
+      <h3>Add New Blog</h3>
+      <form action="/add-new-blog" method="POST">
+        <div class="titleDiv">
+          <input type="text" name="title" class="blog-title" placeholder="Blog Title">
+        </div>
+        <div class="author-date">
+          <input type="text" name="title" class="blog-author" placeholder="Author">        
+          <input type="date" name="date" class="blog-date">
+        </div>
+        <div class="snippetDiv">
+          <textarea name="blog-snippet" id="blog-snippet" cols="30" rows="2.5" class="blog-snippet" placeholder="Blog Snippet"></textarea>
+        </div>
+        <div>
+          <textarea name="blog-body" id="blog-body" cols="30" rows="18" class="blog-body" placeholder="Blog Body"></textarea>
+        </div>
+        <button>Add Blog</button>
+      </form> 
+    </div>
+      
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>

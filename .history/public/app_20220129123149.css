@@ -1,0 +1,16 @@
+
+
+.addBlog {
+    max-width: 700px;
+    margin: auto;
+    background: yellow;
+}
+
+form {
+    max-width: 650px;
+    margin: auto;
+}
+
+form div {
+    width: 100%;
+}

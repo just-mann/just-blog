@@ -1,0 +1,43 @@
+.navbar {
+    max-width: 1200px;
+    height: 60px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid lightgray;
+}
+
+.navbar .my-logo {
+    text-transform: uppercase;
+    text-decoration: none; 
+}
+
+.navbar .my-logo h2 {
+
+}
+
+
+.navbar .links {
+    height: 60px;
+    display: flex;
+    align-items: center;
+}
+
+.navbar .links a {
+    text-decoration: none;
+    color: black;
+    min-height: 50px;
+    display: flex;
+    align-items: center;
+}
+
+.navbar .links a:hover {
+    border-bottom: 2px solid rgb(23, 104, 180);
+}
+
+
+.navbar .links a:not(:last-child) {
+    margin-right: 15px;
+}

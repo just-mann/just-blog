@@ -1,0 +1,39 @@
+.navbar {
+    max-width: 1200px;
+    height: 60px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid lightgray;
+}
+
+.navbar .my-logo {
+    text-transform: uppercase;
+    text-decoration: none; 
+    font-size: 22px;
+    font-weight: 700;
+}
+
+
+
+
+.navbar .links {
+    height: 60px;
+    display: flex;
+    align-items: center;
+}
+
+.navbar .links a {
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+    font-weight: 500;
+    transition: font-size 300ms ease-in-out;
+}
+
+
+.navbar .links a:not(:last-child) {
+    margin-right: 10px;
+}

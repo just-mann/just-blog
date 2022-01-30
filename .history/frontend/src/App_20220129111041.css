@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+
+/* Extra small (Phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    
+
+    .navbar {
+        max-width: 1200px;
+        height: 70px;
+        margin: 0 auto;
+        padding: 0 20px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border-bottom: 1px solid lightgray;
+    }
+    
+    .navbar .my-logo {
+        text-transform: uppercase;
+        text-decoration: none; 
+        font-size: 22px;
+        font-weight: 700;
+    }
+    
+    
+    
+    
+    .navbar .links {
+        height: 60px;
+        display: flex;
+        align-items: center;
+    }
+    
+    .navbar .links a {
+        text-decoration: none;
+        color: black;
+        font-size: 15px;
+        font-weight: 500;
+        transition: font-size 300ms ease-in-out;
+    }
+    
+    
+    .navbar .links a:not(:last-child) {
+        margin-right: 10px;
+    }
+
+}
+
+/* Tablet */
+@media only screen and (min-width: 600px) {
+    body {
+        background: rgb(36, 128, 165);
+    }
+
+    .navbar {
+        max-width: 1200px;
+        height: 60px;
+        margin: 0 auto;
+        padding: 0 20px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border-bottom: 1px solid lightgray;
+    }
+    
+    .navbar .my-logo {
+        text-transform: uppercase;
+        text-decoration: none; 
+        font-size: 22px;
+        font-weight: 700;
+    }
+    
+    
+    
+    
+    .navbar .links {
+        height: 60px;
+        display: flex;
+        align-items: center;
+    }
+
+
+    .navbar .links a {
+        text-decoration: none;
+        color: black;
+        font-size: 18px;
+        font-weight: 500;
+        transition: font-size 300ms ease-in-out;
+    }
+    
+    
+    .navbar .links a:not(:last-child) {
+        margin-right: 20px;
+    }
+}
+
+
+
+/* Desktop */
+@media only screen and (min-width: 900px) {
+    body {
+        background: yellow;
+    }
+
+    .navbar {
+        max-width: 1200px;
+        height: 75px;
+        margin: 0 auto;
+        padding: 0 20px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border-bottom: 1px solid lightgray;
+    }
+    
+    .navbar .my-logo {
+        text-transform: uppercase;
+        text-decoration: none; 
+        font-size: 27px;
+        font-weight: 700;
+    }
+        
+    .navbar .links {
+        height: 60px;
+        display: flex;
+        align-items: center;
+    }
+
+
+    .navbar .links a {
+        text-decoration: none;
+        color: black;
+        font-size: 22px;
+        font-weight: 500;
+        transition: font-size 300ms ease-in-out;
+    }
+    
+    
+    .navbar .links a:not(:last-child) {
+        margin-right: 35px;
+    }
+
+}
+
+

@@ -1,0 +1,50 @@
+
+body {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.addBlog {
+    max-width: 700px;
+    padding: 12px;
+    margin: auto;
+}
+
+.addBlog h3 {
+    text-align: center;
+    margin-top: 2rem;
+}
+
+form {
+    max-width: 100%;
+    margin: 2rem auto;
+}
+
+form div {
+    width: 100%;
+    margin: 0.8rem 0;
+}
+
+form .author-date {
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+    gap: 10px;
+}
+
+form div input {
+    width: 100%;
+    padding: 8px 10px;
+}
+
+.snippetDiv .blog-snippet {
+    resize: none;
+}
+
+form div textarea {
+    width: 100%;
+    padding: 8px 10px;
+}
+
+form button {
+    padding: 6px 35px;
+    font-size: 18px;
+}

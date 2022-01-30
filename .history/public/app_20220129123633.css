@@ -1,0 +1,26 @@
+
+
+.addBlog {
+    max-width: 700px;
+    margin: auto;
+    background: yellow;
+}
+
+form {
+    max-width: 100%;
+    margin: 2rem auto;
+}
+
+form div {
+    width: 100%;
+    margin: 0.8rem 0;
+}
+
+form div input {
+    width: 100%;
+    padding: 7px 10px;
+}
+
+form div textarea {
+    width: 100%;
+}
