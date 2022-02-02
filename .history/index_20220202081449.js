@@ -17,6 +17,8 @@ app.use(express.static('public'))
 app.set('view engine', 'ejs');
 
 
+// Connection string
+//const dbConnectionString = '';
 
 MongoClient.connect(process.env.DB_CONNECTION, {useUnifiedTopology: true})
     .then(client => {
@@ -53,9 +55,7 @@ MongoClient.connect(process.env.DB_CONNECTION, {useUnifiedTopology: true})
         })
 
         const PORT = process.env.PORT || 5000;
-        app.listen(PORT, () => {
-            console.log(`Server is running on port ${PORT}`)
-        })
+app.listen(PORT, () => console.log(`Server is running on port ${PORT}`))
     })
     .catch(err => console.log(err))
 

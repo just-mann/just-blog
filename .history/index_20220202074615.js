@@ -2,7 +2,7 @@ const express = require('express');
 const cors = require('cors');
 const bodyParser = require('body-parser');
 const MongoClient = require('mongodb').MongoClient;
-require('dotenv/config');
+
 
 const app = express();
 
@@ -17,8 +17,10 @@ app.use(express.static('public'))
 app.set('view engine', 'ejs');
 
 
+// Connection string
+const dbConnectionString = 'mongodb+srv://justcode:A1kula22@cluster0.bn7br.mongodb.net/justBlog?retryWrites=true&w=majority';
 
-MongoClient.connect(process.env.DB_CONNECTION, {useUnifiedTopology: true})
+MongoClient.connect(dbConnectionString, {useUnifiedTopology: true})
     .then(client => {
         console.log('Connected to database...')
 
@@ -53,9 +55,7 @@ MongoClient.connect(process.env.DB_CONNECTION, {useUnifiedTopology: true})
         })
 
         const PORT = process.env.PORT || 5000;
-        app.listen(PORT, () => {
-            console.log(`Server is running on port ${PORT}`)
-        })
+app.listen(PORT, () => console.log(`Server is running on port ${PORT}`))
     })
     .catch(err => console.log(err))
 

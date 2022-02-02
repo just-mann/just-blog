@@ -14,17 +14,17 @@
       <h3>Add New Blog</h3>
       <form action="/add-new-blog" method="POST">
         <div class="titleDiv">
-          <input type="text" name="_title" class="blog-title" placeholder="Blog Title">
+          <input type="text" name="blog_title" class="blog-title" placeholder="Blog Title">
         </div>
         <div class="author-date">
-          <input type="text" name="_author" class="blog-author" placeholder="Author">        
-          <input type="date" name="_date" class="blog-date">
+          <input type="text" name="blog_author" class="blog-author" placeholder="Author">        
+          <input type="date" name="blog_date" class="blog-date">
         </div>
         <div class="snippetDiv">
-          <textarea name="_snippet" id="blog-snippet" cols="30" rows="3.5" class="blog-snippet" placeholder="Blog Snippet"></textarea>
+          <textarea name="blog_snippet" id="blog-snippet" cols="30" rows="3.5" class="blog-snippet" placeholder="Blog Snippet"></textarea>
         </div>
         <div>
-          <textarea name="_body" id="blog-body" cols="30" rows="14" class="blog-body" placeholder="Blog Body"></textarea>
+          <textarea name="blog_body" id="blog-body" cols="30" rows="14" class="blog-body" placeholder="Blog Body"></textarea>
         </div>
         <button type="submit">Add Blog</button>
       </form> 
